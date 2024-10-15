@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "dev":  "deno run --allow-net --allow-read --allow-write --watch main.ts",
+    "prod": "deno run --allow-net --allow-read --allow-write main.ts",
+    "tidy": "deno fmt --indent-width 4 main.ts"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  }
+}
